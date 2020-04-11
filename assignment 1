@@ -3,13 +3,14 @@ Write a code to print the size of int, strings, float and char in your system.
 using namespace std;
 int main()
 {
-	float a,b,c;
-	cout<<"Enter two numbers: ";
-	cin>>a>>b;
-	c=a*b;
-	cout<<"Product="<<c;
-	
+	cout<<"Size of char: "<<sizeof(char)<<" bytes"<<"\n";
+	cout<<"Size of int: "<<sizeof(int)<<" bytes"<<"\n";
+	cout<<"Size of float: "<<sizeof(float)<<" bytes"<<"\n";
+	cout<<"Size of double: "<<sizeof(double)<<" bytes"<<"\n";
+	return 0;
 }
+
+
 
 
 Write output of the product of numbers
