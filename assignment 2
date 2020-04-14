@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+	int age;
+	char id[100];
+	cout<<"Enter Age of a user:";
+	cin>>age;
+	
+	if(age>=18)
+	{
+		cout<<"\nYou are eligible";
+		cout<<"\nEnter your voter id:";
+		cin>>id;
+		if (strlen(id)==10)
+		{
+			cout<<"Valid voter id";
+		}
+	
+		else
+		{
+			cout<<"\nInvalid voter id";
+		}
+	}
+	else
+	{
+		cout<<"\nYou are not eligible";
+		cout<<"\nYou have to wait for"<<' '<<18-age<<' '<<"years";
+	}
+	return 0;
+}
