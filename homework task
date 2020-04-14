@@ -1,0 +1,72 @@
+CONVERSION OF DECIMAL TO BINARY
+#include<iostream>
+using namespace std;
+void DecToBin(int n)
+{
+	int a[100];
+	int i=0;
+	while(n>0)
+	{
+		a[i]=n%2;
+		n=n/2;
+		i++;
+	}
+	for(int j=i-1;j>=0;j--)
+	{
+		cout<<a[j];
+	}
+}
+int main()
+{
+	int num;
+	cout<<"Enter number:";
+	cin>>num;
+	DecToBin(num);
+	return 0;
+}
+
+CONVERSION OF BINARY TO DECIMAL
+#include<iostream>
+using namespace std;
+int BinToDec(int n)
+{
+	int num=n;
+	int dec_value=0;
+	
+	int base=1;
+	int temp=num;
+	while(temp)
+	{
+		int ld=temp%10;
+		temp=temp/10;
+		
+		dec_value+=ld*base;
+		base=base*2;
+	}
+	return dec_value;
+}
+int main()
+{
+	int num=1010;
+	cout<<BinToDec(num)<<endl;
+	return 0;
+}
+
+
+FIBONACCI SERIES
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,t1,t2,i,nexterm;
+	cout<<"Enter n:";
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		cout<<t1<<"\t";
+		nexterm=t1+t2;
+		t1=t2;
+		t2=nexterm;
+	}
+	return 0;
+}
